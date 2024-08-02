@@ -1,13 +1,12 @@
 package btree;
 
 public class BTreeNode {
-    int[] keys;  // Array de chaves
-    int t;  // Grau mínimo
-    BTreeNode[] children;  // Array de ponteiros para filhos
-    int n;  // Número de chaves atualmente no nó
-    boolean leaf;  // Verdadeiro se o nó é folha
+    int[] keys;  
+    int t; 
+    BTreeNode[] children;  
+    int n;  
+    boolean leaf; 
 
-    // Construtor
     public BTreeNode(int t, boolean leaf) {
         this.t = t;
         this.leaf = leaf;
@@ -20,12 +19,12 @@ public class BTreeNode {
     public void traverse() {
         int i;
         for (i = 0; i < n; i++) {
-            if (!leaf) {
+            if (!leaf && children[i] != null) {
                 children[i].traverse();
             }
             System.out.print(" " + keys[i]);
         }
-        if (!leaf) {
+        if (!leaf && children[i] != null) {
             children[i].traverse();
         }
     }

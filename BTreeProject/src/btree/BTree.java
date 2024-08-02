@@ -1,7 +1,13 @@
 package btree;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class BTree {
-    BTreeNode root;  
+    BTreeNode root;
     int t;  // Grau mínimo
 
     // Construtor
@@ -14,7 +20,6 @@ public class BTree {
     public void traverse() {
         if (root != null) {
             root.traverse();
-            System.out.println();
         }
     }
 
@@ -49,7 +54,7 @@ public class BTree {
     // Função para remover uma chave na árvore
     public void remove(int key) {
         if (root == null) {
-            System.out.println("The tree is empty\n");
+            System.out.println("A árvore está vazia.");
             return;
         }
 
@@ -62,5 +67,66 @@ public class BTree {
                 root = root.children[0];
             }
         }
+    }
+
+    // Função para salvar a árvore em um arquivo
+    public void saveToFile(String filename) throws IOException {
+        FileWriter fileWriter = new FileWriter(filename);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+        if (root != null) {
+            saveNodeToFile(root, bufferedWriter);
+        }
+
+        bufferedWriter.close();
+        fileWriter.close();
+    }
+
+    private void saveNodeToFile(BTreeNode node, BufferedWriter writer) throws IOException {
+        writer.write(node.n + " ");
+        for (int i = 0; i < node.n; i++) {
+            writer.write(node.keys[i] + " ");
+        }
+        writer.newLine();
+        if (!node.leaf) {
+            for (int i = 0; i <= node.n; i++) {
+                saveNodeToFile(node.children[i], writer);
+            }
+        }
+    }
+
+    // Função para ler a árvore de um arquivo
+    public void loadFromFile(String filename) throws IOException {
+        FileReader fileReader = new FileReader(filename);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+        root = loadNodeFromFile(bufferedReader);
+
+        bufferedReader.close();
+        fileReader.close();
+    }
+
+    private BTreeNode loadNodeFromFile(BufferedReader reader) throws IOException {
+        String line = reader.readLine();
+        if (line == null) {
+            return null;
+        }
+
+        String[] parts = line.split(" ");
+        int n = Integer.parseInt(parts[0]);
+        BTreeNode node = new BTreeNode(t, n == 0);
+
+        for (int i = 0; i < n; i++) {
+            node.keys[i] = Integer.parseInt(parts[i + 1]);
+        }
+        node.n = n;
+
+        if (!node.leaf) {
+            for (int i = 0; i <= n; i++) {
+                node.children[i] = loadNodeFromFile(reader);
+            }
+        }
+
+        return node;
     }
 }
