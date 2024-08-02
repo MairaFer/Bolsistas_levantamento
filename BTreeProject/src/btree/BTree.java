@@ -1,8 +1,7 @@
 package btree;
 
-// BTree.java
 public class BTree {
-    BTreeNode root;  // Ponteiro para a raiz da árvore
+    BTreeNode root;  
     int t;  // Grau mínimo
 
     // Construtor
@@ -15,6 +14,7 @@ public class BTree {
     public void traverse() {
         if (root != null) {
             root.traverse();
+            System.out.println();
         }
     }
 
@@ -42,6 +42,24 @@ public class BTree {
                 root = s;
             } else {
                 root.insertNonFull(key);
+            }
+        }
+    }
+
+    // Função para remover uma chave na árvore
+    public void remove(int key) {
+        if (root == null) {
+            System.out.println("The tree is empty\n");
+            return;
+        }
+
+        root.remove(key);
+
+        if (root.n == 0) {
+            if (root.leaf) {
+                root = null;
+            } else {
+                root = root.children[0];
             }
         }
     }
