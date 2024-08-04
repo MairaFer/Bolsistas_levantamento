@@ -1,0 +1,80 @@
+# ATV 05 - Árvore B - P1.
+
+Este projeto implementa uma Árvore B com operações de inserção, remoção, busca e percorrimento.
+Além disso, oferece funcionalidade para salvar e carregar a árvore de um arquivo.
+
+** Estrutura do Projeto **
+
+O projeto contém os seguintes arquivos:
+
+- `NoArvoreB`: Implementa os nós da Árvore B.
+- `ArvoreB`: Implementa a Árvore B e suas operações.
+- `Main`: Contém um metodo Main para testar as funcionalidades da Árvore B.
+
+** Funcionalidades **
+
+1. Inserir chave: Adiciona uma nova chave na Árvore B.
+2. Remover chave: Remove uma chave existente da Árvore B.
+3. Buscar chave: Procura por uma chave específica na Árvore B.
+4. Percorrer a árvore: Exibe todas as chaves da Árvore B em ordem crescente.
+5. Salvar árvore em arquivo: Salva a estrutura da Árvore B em um arquivo.
+6. Carregar árvore de arquivo: Carrega a estrutura da Árvore B de um arquivo.
+
+** Estrutura da Árvore B**
+
+* Classe NoArvoreB *
+
+A classe NoArvoreB representa os nós da Árvore B e contém os seguintes atributos e métodos:
+
+- Atributos:
+
+int[] chaves: Array de chaves armazenadas no nó.
+int t: Grau mínimo da árvore.
+BTreeNode[] filhos: Array de ponteiros para os filhos.
+int n: Número de chaves atualmente no nó.
+boolean folha: Indica se o nó é folha.
+
+- Métodos:
+
+percorrer(): Percorre todas as chaves na subárvore enraizada neste nó.
+imprimirNo(): Percorre todas as chaves e imprime se/u conteudo.
+buscar(int chave): Busca uma chave na subárvore enraizada neste nó.
+inserirNaoCheio(int chave): Insere uma chave em um nó não cheio.
+dividirFilho(int i, NoArvore y): Divide um nó filho.
+remove(int chave): Remove uma chave da subárvore enraizada neste nó.
+
+* Classe ArvoreB *
+
+A classe ArvoreB representa a Árvore B e contém os seguintes atributos e métodos:
+
+- Atributos:
+
+NoArvore root: Raiz da árvore.
+int t: Grau mínimo da árvore.
+
+- Métodos:
+
+percorrer(): Percorre todas as chaves na árvore.
+buscar(int chave): Busca uma chave na árvore.
+inserir(int chave): Insere uma nova chave na árvore.
+remover(int chave): Remove uma chave da árvore.
+salvarParaArquivo(String nomeArquivo): Salva a árvore em um arquivo.
+carregarDeArquivo(String nomeArquivo): Carrega a árvore de um arquivo
+
+**********OBSERVAÇÕES**********
+
+1. **Grau Mínimo/Ordem da arvore (`t`)**:
+   - Certifique-se de escolher um valor apropriado para o grau mínimo (`t`) ao inicializar a árvore.
+Esse valor afeta a capacidade de cada nó da árvore e, portanto, o desempenho das operações.
+
+2. **Manipulação de Arquivos**:
+   - O arquivo usado para salvar e carregar a árvore deve estar acessível e no formato correto.
+O código espera um formato específico, onde cada linha representa um nó da árvore. Certifique-se de que
+o arquivo não está corrompido e que está no formato esperado para evitar erros de leitura.
+
+3. **Consistência dos Dados**:
+   - Após operações de inserção e remoção, é recomendável percorrer a árvore para verificar a consistência dos dados.
+   Isso pode ajudar a identificar e resolver problemas de implementação ou uso.
+
+4. **Limitações de Memória**:
+   - Para árvores grandes com muitos nós e chaves, esteja ciente das limitações de memória do sistema.
