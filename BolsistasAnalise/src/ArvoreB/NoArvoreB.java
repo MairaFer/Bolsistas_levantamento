@@ -1,7 +1,8 @@
 package ArvoreB;
 
 public class NoArvoreB {
-    int[] chaves;
+    Elemento[] elementos; // Array para armazenar os Elementos
+    int[] chaves;         // Array para armazenar as chaves (números dos Elementos)
     int t;
     NoArvoreB[] filhos;
     int n;
@@ -11,276 +12,264 @@ public class NoArvoreB {
         this.t = t;
         this.folha = folha;
         this.chaves = new int[2 * t - 1];
+        this.elementos = new Elemento[2 * t - 1]; // Inicializa o array de Elemento
         this.filhos = new NoArvoreB[2 * t];
         this.n = 0;
     }
 
-    public void percorrer() {
-        int i;
-        for (i = 0; i < this.n; i++) {
-            if (!this.folha) {
-                this.filhos[i].percorrer();
-            }
-            System.out.print(this.chaves[i] + " ");
-        }
-
-        if (!this.folha) {
-            this.filhos[i].percorrer();
-        }
-    }
-
-    public void imprimirNo() {
-        int i;
-        for (i = 0; i < this.n; i++) {
-            if (!this.folha) {
-                this.filhos[i].imprimirNo();
-            }
-            System.out.print(this.chaves[i] + " ");
-        }
-
-        if (!this.folha) {
-            this.filhos[i].imprimirNo();
-        }
-    }
-
-    public NoArvoreB buscar(int chave) {
-        int i = 0;
-        while (i < this.n && chave > this.chaves[i]) {
-            i++;
-        }
-
-        if (i < this.n && chave == this.chaves[i]) {
-            return this;
-        }
-
-        if (this.folha) {
-            return null;
-        } else {
-            return this.filhos[i].buscar(chave);
-        }
-    }
-
-    public void inserirNaoCheio(int chave) {
-        int i = this.n - 1;
-        if (this.folha) {
-            while (i >= 0 && this.chaves[i] > chave) {
-                this.chaves[i + 1] = this.chaves[i];
+    public void inserirNaoCheio(Elemento elemento) {
+        int i = n - 1;
+        int chave = elemento.getChave();
+        if (folha) {
+            while (i >= 0 && chaves[i] > chave) {
+                chaves[i + 1] = chaves[i];
+                elementos[i + 1] = elementos[i];
                 i--;
             }
-            this.chaves[i + 1] = chave;
-            this.n++;
+            chaves[i + 1] = chave;
+            elementos[i + 1] = elemento;
+            n++;
         } else {
-            while (i >= 0 && this.chaves[i] > chave) {
+            while (i >= 0 && chaves[i] > chave) {
                 i--;
             }
-            if (this.filhos[i + 1].n == 2 * this.t - 1) {
-                this.dividirFilho(i + 1, this.filhos[i + 1]);
-                if (this.chaves[i + 1] < chave) {
+            if (filhos[i + 1].n == 2 * t - 1) {
+                dividirFilho(i + 1, filhos[i + 1]);
+                if (chaves[i + 1] < chave) {
                     i++;
                 }
             }
-            this.filhos[i + 1].inserirNaoCheio(chave);
+            filhos[i + 1].inserirNaoCheio(elemento);
         }
     }
 
     public void dividirFilho(int i, NoArvoreB y) {
         NoArvoreB z = new NoArvoreB(y.t, y.folha);
-        z.n = this.t - 1;
+        z.n = t - 1;
 
-        for (int j = 0; j < this.t - 1; j++) {
-            z.chaves[j] = y.chaves[j + this.t];
+        for (int j = 0; j < t - 1; j++) {
+            z.chaves[j] = y.chaves[j + t];
+            z.elementos[j] = y.elementos[j + t]; // Copia os elementos
         }
 
         if (!y.folha) {
-            for (int j = 0; j < this.t; j++) {
-                z.filhos[j] = y.filhos[j + this.t];
+            for (int j = 0; j < t; j++) {
+                z.filhos[j] = y.filhos[j + t];
             }
         }
 
-        y.n = this.t - 1;
+        y.n = t - 1;
 
-        for (int j = this.n; j >= i + 1; j--) {
-            this.filhos[j + 1] = this.filhos[j];
+        for (int j = n; j >= i + 1; j--) {
+            filhos[j + 1] = filhos[j];
         }
 
-        this.filhos[i + 1] = z;
+        filhos[i + 1] = z;
 
-        for (int j = this.n - 1; j >= i; j--) {
-            this.chaves[j + 1] = this.chaves[j];
+        for (int j = n - 1; j >= i; j--) {
+            chaves[j + 1] = chaves[j];
+            elementos[j + 1] = elementos[j]; // Move os elementos
         }
 
-        this.chaves[i] = y.chaves[this.t - 1];
-        this.n++;
+        chaves[i] = y.chaves[t - 1];
+        elementos[i] = y.elementos[t - 1]; // Adiciona o elemento no meio
+
+        n++;
+    }
+
+    public NoArvoreB buscar(int chave) {
+        int i = 0;
+        while (i < n && chave > chaves[i]) {
+            i++;
+        }
+
+        if (i < n && chaves[i] == chave) {
+            return this;
+        }
+
+        return folha ? null : filhos[i].buscar(chave);
     }
 
     public void remover(int chave) {
-        int idx = this.encontrarChave(chave);
+        int idx = encontrarChave(chave);
 
-        if (idx < this.n && this.chaves[idx] == chave) {
-            if (this.folha) {
-                this.removerDeFolha(idx);
+        if (idx < n && chaves[idx] == chave) {
+            if (folha) {
+                removerDeFolha(idx);
             } else {
-                this.removerDeNaoFolha(idx);
+                removerDeNaoFolha(idx);
             }
         } else {
-            if (this.folha) {
-                System.out.println("A chave " + chave + " não está na árvore.");
+            if (folha) {
+                System.out.println("A chave " + chave + " não existe na árvore.");
                 return;
             }
 
-            boolean flag = idx == this.n;
-
-            if (this.filhos[idx].n < this.t) {
-                this.preencher(idx);
+            boolean flag = idx == n;
+            if (filhos[idx].n < t) {
+                preencher(idx);
             }
 
-            if (flag && idx > this.n) {
-                this.filhos[idx - 1].remover(chave);
+            if (flag && idx > n) {
+                filhos[idx - 1].remover(chave);
             } else {
-                this.filhos[idx].remover(chave);
+                filhos[idx].remover(chave);
             }
         }
     }
 
     private int encontrarChave(int chave) {
         int idx = 0;
-        while (idx < this.n && this.chaves[idx] < chave) {
-            idx++;
+        while (idx < n && chaves[idx] < chave) {
+            ++idx;
         }
         return idx;
     }
 
     private void removerDeFolha(int idx) {
-        for (int i = idx + 1; i < this.n; i++) {
-            this.chaves[i - 1] = this.chaves[i];
+        for (int i = idx + 1; i < n; ++i) {
+            chaves[i - 1] = chaves[i];
         }
-        this.n--;
+        n--;
     }
 
     private void removerDeNaoFolha(int idx) {
-        int chave = this.chaves[idx];
+        int k = chaves[idx];
 
-        if (this.filhos[idx].n >= this.t) {
-            int pred = this.getPredecessor(idx);
-            this.chaves[idx] = pred;
-            this.filhos[idx].remover(pred);
-        } else if (this.filhos[idx + 1].n >= this.t) {
-            int suc = this.getSucessor(idx);
-            this.chaves[idx] = suc;
-            this.filhos[idx + 1].remover(suc);
+        if (filhos[idx].n >= t) {
+            int pred = obterPredecessor(idx);
+            chaves[idx] = pred;
+            filhos[idx].remover(pred);
+        } else if (filhos[idx + 1].n >= t) {
+            int succ = obterSucessor(idx);
+            chaves[idx] = succ;
+            filhos[idx + 1].remover(succ);
         } else {
-            this.juntar(idx);
-            this.filhos[idx].remover(chave);
+            juntar(idx);
+            filhos[idx].remover(k);
         }
     }
 
-    private int getPredecessor(int idx) {
-        NoArvoreB atual = this.filhos[idx];
-        while (!atual.folha) {
-            atual = atual.filhos[atual.n];
+    private int obterPredecessor(int idx) {
+        NoArvoreB cur = filhos[idx];
+        while (!cur.folha) {
+            cur = cur.filhos[cur.n];
         }
-        return atual.chaves[atual.n - 1];
+        return cur.chaves[cur.n - 1];
     }
 
-    private int getSucessor(int idx) {
-        NoArvoreB atual = this.filhos[idx + 1];
-        while (!atual.folha) {
-            atual = atual.filhos[0];
+    private int obterSucessor(int idx) {
+        NoArvoreB cur = filhos[idx + 1];
+        while (!cur.folha) {
+            cur = cur.filhos[0];
         }
-        return atual.chaves[0];
+        return cur.chaves[0];
     }
 
     private void preencher(int idx) {
-        if (idx != 0 && this.filhos[idx - 1].n >= this.t) {
-            this.pegarEmprestadoAnterior(idx);
-        } else if (idx != this.n && this.filhos[idx + 1].n >= this.t) {
-            this.pegarEmprestadoProximo(idx);
+        if (idx != 0 && filhos[idx - 1].n >= t) {
+            pegarEmprestadoAnterior(idx);
+        } else if (idx != n && filhos[idx + 1].n >= t) {
+            pegarEmprestadoProximo(idx);
         } else {
-            if (idx != this.n) {
-                this.juntar(idx);
+            if (idx != n) {
+                juntar(idx);
             } else {
-                this.juntar(idx - 1);
+                juntar(idx - 1);
             }
         }
     }
 
     private void pegarEmprestadoAnterior(int idx) {
-        NoArvoreB filho = this.filhos[idx];
-        NoArvoreB irmao = this.filhos[idx - 1];
+        NoArvoreB filho = filhos[idx];
+        NoArvoreB irmao = filhos[idx - 1];
 
-        for (int i = filho.n - 1; i >= 0; i--) {
+        for (int i = filho.n - 1; i >= 0; --i) {
             filho.chaves[i + 1] = filho.chaves[i];
         }
 
         if (!filho.folha) {
-            for (int i = filho.n; i >= 0; i--) {
+            for (int i = filho.n; i >= 0; --i) {
                 filho.filhos[i + 1] = filho.filhos[i];
             }
         }
 
-        filho.chaves[0] = this.chaves[idx - 1];
+        filho.chaves[0] = chaves[idx - 1];
 
         if (!filho.folha) {
             filho.filhos[0] = irmao.filhos[irmao.n];
         }
 
-        this.chaves[idx - 1] = irmao.chaves[irmao.n - 1];
+        chaves[idx - 1] = irmao.chaves[irmao.n - 1];
 
-        filho.n++;
-        irmao.n--;
+        filho.n += 1;
+        irmao.n -= 1;
     }
 
     private void pegarEmprestadoProximo(int idx) {
-        NoArvoreB filho = this.filhos[idx];
-        NoArvoreB irmao = this.filhos[idx + 1];
+        NoArvoreB filho = filhos[idx];
+        NoArvoreB irmao = filhos[idx + 1];
 
-        filho.chaves[filho.n] = this.chaves[idx];
+        filho.chaves[filho.n] = chaves[idx];
 
         if (!filho.folha) {
             filho.filhos[filho.n + 1] = irmao.filhos[0];
         }
 
-        this.chaves[idx] = irmao.chaves[0];
+        chaves[idx] = irmao.chaves[0];
 
-        for (int i = 1; i < irmao.n; i++) {
+        for (int i = 1; i < irmao.n; ++i) {
             irmao.chaves[i - 1] = irmao.chaves[i];
         }
 
         if (!irmao.folha) {
-            for (int i = 1; i <= irmao.n; i++) {
+            for (int i = 1; i <= irmao.n; ++i) {
                 irmao.filhos[i - 1] = irmao.filhos[i];
             }
         }
 
-        filho.n++;
-        irmao.n--;
+        filho.n += 1;
+        irmao.n -= 1;
     }
 
     private void juntar(int idx) {
-        NoArvoreB filho = this.filhos[idx];
-        NoArvoreB irmao = this.filhos[idx + 1];
+        NoArvoreB filho = filhos[idx];
+        NoArvoreB irmao = filhos[idx + 1];
 
-        filho.chaves[this.t - 1] = this.chaves[idx];
+        filho.chaves[t - 1] = chaves[idx];
 
-        for (int i = 0; i < irmao.n; i++) {
-            filho.chaves[i + this.t] = irmao.chaves[i];
+        for (int i = 0; i < irmao.n; ++i) {
+            filho.chaves[i + t] = irmao.chaves[i];
         }
 
         if (!filho.folha) {
-            for (int i = 0; i <= irmao.n; i++) {
-                filho.filhos[i + this.t] = irmao.filhos[i];
+            for (int i = 0; i <= irmao.n; ++i) {
+                filho.filhos[i + t] = irmao.filhos[i];
             }
         }
 
-        for (int i = idx + 1; i < this.n; i++) {
-            this.chaves[i - 1] = this.chaves[i];
+        for (int i = idx + 1; i < n; ++i) {
+            chaves[i - 1] = chaves[i];
         }
 
-        for (int i = idx + 2; i <= this.n; i++) {
-            this.filhos[i - 1] = this.filhos[i];
+        for (int i = idx + 2; i <= n; ++i) {
+            filhos[i - 1] = filhos[i];
         }
 
         filho.n += irmao.n + 1;
-        this.n--;
+        n--;
+    }
+
+    public void imprimirNo() {
+        for (int i = 0; i < this.n; i++) {
+            System.out.print(this.chaves[i] + " ");
+        }
+        if (!this.folha) {
+            for (int i = 0; i <= this.n; i++) {
+                if (this.filhos[i] != null) {
+                    this.filhos[i].imprimirNo();
+                }
+            }
+        }
     }
 }

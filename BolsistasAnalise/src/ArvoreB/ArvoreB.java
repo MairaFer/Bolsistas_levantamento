@@ -19,8 +19,7 @@ public class ArvoreB {
     public void inserir(Elemento elemento) {
         if (this.raiz == null) {
             this.raiz = new NoArvoreB(this.t, true);
-            this.raiz.chaves[0] = elemento.getChave();
-            this.raiz.n = 1;
+            this.raiz.inserirNaoCheio(elemento);
         } else if (this.raiz.n == 2 * this.t - 1) {
             NoArvoreB s = new NoArvoreB(this.t, false);
             s.filhos[0] = this.raiz;
@@ -29,10 +28,10 @@ public class ArvoreB {
             if (s.chaves[0] < elemento.getChave()) {
                 i++;
             }
-            s.filhos[i].inserirNaoCheio(elemento.getChave());
+            s.filhos[i].inserirNaoCheio(elemento);
             this.raiz = s;
         } else {
-            this.raiz.inserirNaoCheio(elemento.getChave());
+            this.raiz.inserirNaoCheio(elemento);
         }
     }
 
@@ -67,7 +66,7 @@ public class ArvoreB {
             if (!no.folha) {
                 salvarNoParaArquivo(no.filhos[i], escritor);
             }
-            escritor.write(no.chaves[i] + "\n");
+            escritor.write(no.elementos[i].getChave() + "\n");
         }
 
         if (!no.folha) {
@@ -100,10 +99,40 @@ public class ArvoreB {
                 novaRaiz.dividirFilho(0, raiz);
                 raiz = novaRaiz;
             }
-            raiz.inserirNaoCheio(chave);
+            raiz.inserirNaoCheio(new Elemento(chave, "", "", "", "", "", "", "", "")); // Insere um Elemento com chave
         }
 
         return raiz;
+    }
+
+    private void obterTodosElementosRec(NoArvoreB no, List<Elemento> elementos) {
+        int i;
+        for (i = 0; i < no.n; i++) {
+            if (!no.folha) {
+                obterTodosElementosRec(no.filhos[i], elementos);
+            }
+            elementos.add(no.elementos[i]);
+        }
+        if (!no.folha) {
+            obterTodosElementosRec(no.filhos[i], elementos);
+        }
+    }
+
+    public List<Elemento> obterTodosElementos() {
+        List<Elemento> elementos = new ArrayList<>();
+        if (this.raiz != null) {
+            obterTodosElementosRec(this.raiz, elementos);
+        }
+        return elementos;
+    }
+
+    public double calcularTotalGasto() {
+        double totalGasto = 0.0;
+        List<Elemento> elementos = obterTodosElementos();
+        for (Elemento elemento : elementos) {
+            totalGasto += elemento.getValorMensalDouble();
+        }
+        return totalGasto;
     }
 
     public void imprimirArvore() {
