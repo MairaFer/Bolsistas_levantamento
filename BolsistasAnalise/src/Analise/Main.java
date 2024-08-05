@@ -1,8 +1,6 @@
 package Analise;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Scanner;
+
+import java.io.File;
 import ArvoreB.ArvoreB;
 import ArvoreB.Elemento;
 import Util.LeitorCsv;
@@ -11,13 +9,17 @@ public class Main {
     public static void main(String[] args) {
         // Crie uma instância da árvore B com uma ordem t adequada
         ArvoreB arvore = new ArvoreB(3); // Por exemplo, ordem 3
+        LeitorCsv leitor = new LeitorCsv();
+
 
         // Leia os dados do CSV
-        List<Elemento> elementos = LeitorCsv.lerDadosCsv("C:\\Users\\ferna\\OneDrive\\Área de Trabalho\\Atv05_MairaFernanda\\BolsistasAnalise\\src\\ENTRADA\\BolsistasDados2020-01.csv");
-
-        // Insira os dados na árvore
-        for (Elemento elemento : elementos) {
-            arvore.inserir(elemento);
+        File file = new File("src\\ENTRADA"); //Variavel File que recebe caminho de todos os arquivos
+        for (final File fileEntrada : file.listFiles()){ //Le todos os arquivos no caminho indicado e retorna o nome de cada um a cada interação
+            List<Elemento> elementos = leitor.lerDadosCsv("src\\ENTRADA\\"+fileEntrada.getName()); // Abre e le o arquivo
+            // Insira os dados na árvore
+            for (Elemento elemento : elementos) {
+                arvore.inserir(elemento);
+            }
         }
 
         // Calcule o total gasto
