@@ -1,198 +1,77 @@
-Nº;Aluno(a) Bolsista;CPF;Curso;Número de Registro da Atividade na PROEXT;Edital;Valor Mensal da Bolsa;Período de Recebimento da Bolsa;Instituição/Órgão Responsável Pelo Pagamento
-1;Analice Dreger Cunha;***.372.118-**;NUTRIÇÃO (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-2;André Luiz Marques de Andrade;***.021.121-**;ENGENHARIA ELÉTRICA (Bacharelado);409/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-3;Beatriz Maria Dias Pereira;***.781.008-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-4;Giovana Festucia Oliveira;***.813.668-**;"ENGENHARIA AMBIENTAL (Bacharelado)
-";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+1;Analice Dreger Cunha;***.372.118-**;NUTRIï¿½ï¿½O (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+2;Andrï¿½ Luiz Marques de Andrade;***.021.121-**;ENGENHARIA ELï¿½TRICA (Bacharelado);409/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+3;Beatriz Maria Dias Pereira;***.781,008-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+4;Giovana Festucia Oliveira;***.813.668-**;"ENGENHARIA AMBIENTAL (Bacharelado) ";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
 5;Isadora Costa Lustoza;***.534.598-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-6;Laís Benelli Lopes;***.673.468-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-7;Marcos Antonio Ferreira da Silva Filho;***.177.586-**;NUTRIÇÃO (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+6;Laï¿½s Benelli Lopes;***.673.468-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+7;Marcos Antonio Ferreira da Silva Filho;***.177.586-**;NUTRIï¿½ï¿½O (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
 8;Nicolas Martins Costa;***.518.948-**;ENGENHARIA DE ALIMENTOS (Bacharelado);411/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-9;Pedro Sant'ana;***.908.131-**;"ENGENHARIA AMBIENTAL (Bacharelado)
-";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-10;Rafael Villela Schmidt Lopes;***.438.838-**;"ENGENHARIA AMBIENTAL (Bacharelado)
-";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-11;Samantha Macedo dos Santos;***.951.108-**;NUTRIÇÃO (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Abril/23;UFTM - PROEXT/PROPPG
-12;Taís Ingred Rodrigues Costa;***.508.776-**;NUTRIÇÃO (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-13;Valéria do Nascimento de Laia;***.724.986-**;"ENGENHARIA AMBIENTAL (Bacharelado)
-";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
-14;Agata Eduarda Biciesto Gil;***.544.888-**;PSICOLOGIA (Bacharelado);88/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-15;Amanda Lara de Morais;***.646.496-**;TERAPIA OCUPACIONAL (Bacharelado);96/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-16;Amanda Rodrigues Costa;"
-***.975.496-**";FISIOTERAPIA (Bacharelado);110/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-17;Ana Carolina Ambrósio Rodrigues;***.037.426-**;MEDICINA (Bacharelado);105/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-18;André Giordani Silveira;***.917.386-**;EDUCAÇÃO FÍSICA (Bacharelado);87/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-19;Bruna Cunha da Silva;***.449.951-**;EDUCAÇÃO FÍSICA (Bacharelado);109/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-20;Bruno Henrique Frazão;***.934.606-**;ENGENHARIA ELÉTRICA (Bacharelado);102/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-21;Caio César Balduino dos Santos;***.572.788-**;FÍSICA (Licenciatura);84/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-22;Camila Dourado de Oliveira;***.067.658-**;PSICOLOGIA (Bacharelado);97/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-23;Caroline Milena Martins;***.049.598-**;FISIOTERAPIA (Bacharelado);104/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-24;Daniela Machado de Moura Silva;***.542.026-**;MEDICINA (Bacharelado);105/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-25;Danielle Costa Pires;***.744.656-**;MEDICINA (Bacharelado);107/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-26;Gabriela de Almeida Santos;***.202.658-**;AGRONOMIA (Bacharelado);92/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-27;Gabriela Dionisio Galbiatti;***.243.398-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);94/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-28;Gabriela Oliveira de Abreu;***.299.818-**;SERVIÇO SOCIAL (Bacharelado);89/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-29;Geovanna Defante Incerpi;***.137.328-**;FISIOTERAPIA (Bacharelado);98/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-30;Graziela de Carvalho Rodrigues;***.563.558-**;AGRONOMIA (Bacharelado);101/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-31;Guilherme Assis Xavier;***.397.146-**;MEDICINA (Bacharelado);106/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-32;Guilherme Luiz Silva;***.632.848-**;SERVIÇO SOCIAL (Bacharelado);89/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-33;Guilherme Simões Ozório;***.946.538-**;ENGENHARIA MECÂNICA (Bacharelado);102/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-34;Henrique Faleiros de Padua Ferreira;***.100.838-**;MEDICINA (Bacharelado);103/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-35;Ígor Silva Matias;***.262.716-**;MEDICINA (Bacharelado);106/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-36;Ivan Alcides Sarto Júnior;***.526.918-**;EDUCAÇÃO FÍSICA (Bacharelado);111/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-37;Ivanessa Vieira de Oliveira;***.224.478-**;AGRONOMIA (Bacharelado);100/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-38;Jéssica da Cruz Menezes;***.858.906-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);86/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-39;Jessica Rodrigues Costa;***.104.048-**;MEDICINA (Bacharelado);103/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-40;Julia Goes Alpendre Elias;***.642.118-**;ENGENHARIA ELÉTRICA (Bacharelado);99/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-41;Kathuly Kilmer Santos Corrêa;***.208.116-**;EDUCAÇÃO FÍSICA (Bacharelado);111/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-42;Ketlen Caroline Souza Fonseca;***.957.836-**;PSICOLOGIA (Bacharelado);93/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-43;Leonardo Mendonça Borges;***.672.366-**;ENGENHARIA ELÉTRICA (Bacharelado);91/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-44;Lilian Nunes dos Santos;***.757.386-**;EDUCAÇÃO FÍSICA (Bacharelado);87/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-45;Luca Silva e Nirschl;***.742.828-**;PSICOLOGIA (Bacharelado);93/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-46;Lucas Carvalho Rosa de Souza;***.669.406-**;FÍSICA (Licenciatura);84/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-47;Lynna Stefany Furtado Morais;***.353.576-**;ENFERMAGEM (Bacharelado);108/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-48;Maria Gabriela Pereira Miranda;***.846.658-**;FISIOTERAPIA (Bacharelado);96/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-49;Maria Vithorya de Magalhães Ferreira;***.201.666-**;FISIOTERAPIA (Bacharelado);110/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-50;Marianna Rodrigues Paiva Buarao;***.751.068-**;AGRONOMIA (Bacharelado);92/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-51;Milena Teixeira dos Santos;***.397.024-**;AGRONOMIA (Bacharelado);95/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-52;Nathalia Caroline do Nascimento;***.034.528-**;BIOMEDICINA (Bacharelado);90/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Maio";UFTM - PROEXT
-53;Nícolas Antonio Tavares;***.973.378-**;ENGENHARIA ELÉTRICA (Bacharelado);91/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-54;Nyna Vitória Marques Fontes;***.090.436-**;PSICOLOGIA (Bacharelado);97/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-55;Paola Christye Simonato;***.168.397-**;MEDICINA (Bacharelado);88/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-56;Stefany Santos Neves;***.366.216-**;EDUCAÇÃO FÍSICA (Bacharelado);86/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-57;Thainara Leite Daher;***.968.136-**;HISTÓRIA (Licenciatura);85/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-58;Vinícius Azevedo Vigarani;***.966.798-**;AGRONOMIA (Bacharelado);95/2023;"Edital PIBEX/PROEXT
-09/2022";R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-59;Anna Laura Gomes Rizzatto;***.141.048-**;BIOMEDICINA (Bacharelado);156/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-60;Anna Luísa Saraiva Vaz de Oliveira;***.756.918-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);121/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-61;Camila Rodrigues Perlim;***.134.608-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);121/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-62;Frederico Garcia Martins Borges de Miranda;***.496.516-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);116/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-63;João Vitor Ferreira dos Santos;***.382.556-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);116/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-64;Lorenzo Araújo de Freitas;***.969.066-**;HISTÓRIA (Licenciatura);155/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Maio a
-Novembro";UFTM - PROEXT
-65;Maria Eduarda Cruvinel Boaretto;***.433.418-**;CIÊNCIAS BIOLÓGICAS (Licenciatura);155/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;2023 - março;UFTM - PROEXT
-66;Yve Matayoshi Galvão;***.972.406-**;SERVIÇO SOCIAL (Bacharelado);156/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-67;Alícia Soares Siqueira;***.458.956-**;PSICOLOGIA (Bacharelado);54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;2023 - março;UFTM - PROEXT
-68;Eduarda de Lima Ferreira;***.841.988-** ;TERAPIA OCUPACIONAL (Bacharelado);61/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-69;Laura Helena Silva;***.258.658-**;PSICOLOGIA (Bacharelado);54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Março a
-Novembro";UFTM - PROEXT
-70;Jorge Henrique Amaral Junior;***.450.298-**;Fisioterapia;54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Maio a
-Novembro";UFTM - PROEXT
-71;Julia Gabriela Picca;***.136.838-**;TERAPIA OCUPACIONAL (Bacharelado);114/2021;Processo Seletivo SEMEC/PROEXT 43/2022;R$ 400,00;"2023 - Março a
-Maio";UFTM - PROEXT
-72;Athilla Izidio Lopes Pereira;***.072.508-**;"ENGENHARIA AMBIENTAL (Bacharelado)
-";134/2022;Proceso Seletivo Núcleo Rondon 31/2023;R$ 400,00;"2023 - Abril a
-Dezembro";UFTM - PROEXT
-73;Ingrid de Oliveira Marques;"***.881.786-**
-";"TÉCNICO EM ANÁLISES CLÍNICAS
-";158/2023;Edital PROEXT/CEFORES 06/2022;R$ 400,00;"2023 - Abril a
-Dezembro";CEFORES
-74;José Antonhy Vieira Ramos;"***.915.554-**
-";"TÉCNICO EM INFORMÁTICA
-";159/2023;Edital PROEXT/CEFORES 06/2022;R$ 400,00;"2023 - Abril a
-Dezembro";CEFORES
-75;Leonardo Bruno Terruggi;***.075.368-**;CIÊNCIAS BIOLÓGICAS;62/2023;Processo Seletivo ECOCAPOEIRA/PROEXT/FUNEPU 41/2022;R$ 400,00;2023/2024 Março/23 a Fevereiro/24;FUNEPU 
-76;Luciane Mayra Graciotto;***.944.428-**;ENFERMAGEM (Bacharelado);40/2023;Processo Seletivo E-fluxo 30/2023;R$ 500,00;"2023 - Abril a
-Outubro";FUNEPU 
-77;Milena Ramos Silva;***.587.186-**;ENFERMAGEM (Bacharelado);40/2023;Processo Seletivo E-fluxo 30/2023;R$ 500,00;"2023 - Abril a
-Outubro";FUNEPU 
-;;;;;;;;
-Atualizada em  02.06.2023;;;;;;;;
-;;;;;;;;
-Para acessar os títulos das atividades às quais os alunos estão vinculados, gentileza acessar a lista de Programas e Projetos registrados na PROEXT através do link <http://www.uftm.edu.br/proext/desenvolvimento-da-extensao-universitaria/atividades-de-extensao-registradas>;;;;;;;;
+9;Pedro Sant'ana;***.908.131-**;"ENGENHARIA AMBIENTAL (Bacharelado) ";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+10;Rafael Villela Schmidt Lopes;***.438.838-**;"ENGENHARIA AMBIENTAL (Bacharelado) ";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+11;Samantha Macedo dos Santos;***.951.108-**;NUTRIï¿½ï¿½O (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Abril/23;UFTM - PROEXT/PROPPG
+12;Taï¿½s Ingred Rodrigues Costa;***.508.776-**;NUTRIï¿½ï¿½O (Bacharelado);412/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG
+13;Valï¿½ria do Nascimento de Laia;***.724.986-**;"ENGENHARIA AMBIENTAL (Bacharelado) ";408/2022;Processo Seletivo PROEXT/PROPPG 04/2022;R$ 400,00;2022/2023 Outubro/22 a Setembro/23;UFTM - PROEXT/PROPPG 
+14;Agata Eduarda Biciesto Gil;***.544.888-**;PSICOLOGIA (Bacharelado);88/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+15;Amanda Lara de Morais;***.646.496-**;TERAPIA OCUPACIONAL (Bacharelado);96/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+16;Amanda Rodrigues Costa;" ***.975.496-**";FISIOTERAPIA (Bacharelado);110/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+17;Ana Carolina Ambrï¿½sio Rodrigues;***.037.426-**;MEDICINA (Bacharelado);105/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+18;Andrï¿½ Giordani Silveira;***.917.386-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);87/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+19;Bruna Cunha da Silva;***.449.951-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);109/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+20;Bruno Henrique Frazï¿½o;***.934.606-**;ENGENHARIA ELï¿½TRICA (Bacharelado);102/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+21;Caio Cï¿½sar Balduino dos Santos;***.572.788-**;Fï¿½SICA (Licenciatura);84/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+22;Camila Dourado de Oliveira;***.067.658-**;PSICOLOGIA (Bacharelado);97/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+23;Caroline Milena Martins;***.049.598-**;FISIOTERAPIA (Bacharelado);104/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+24;Daniela Machado de Moura Silva;***.542.026-**;MEDICINA (Bacharelado);105/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+25;Danielle Costa Pires;***.744.656-**;MEDICINA (Bacharelado);107/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+26;Gabriela de Almeida Santos;***.202.658-**;AGRONOMIA (Bacharelado);92/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+27;Gabriela Dionisio Galbiatti;***.243.398-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);94/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+28;Gabriela Oliveira de Abreu;***.299.818-**;SERVIï¿½O SOCIAL (Bacharelado);89/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+29;Geovanna Defante Incerpi;***.137.328-**;FISIOTERAPIA (Bacharelado);98/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+30;Graziela de Carvalho Rodrigues;***.563.558-**;AGRONOMIA (Bacharelado);101/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+31;Guilherme Assis Xavier;***.397.146-**;MEDICINA (Bacharelado);106/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+32;Guilherme Luiz Silva;***.632.848-**;SERVIï¿½O SOCIAL (Bacharelado);89/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+33;Guilherme Simï¿½es Ozï¿½rio;***.946.538-**;ENGENHARIA MECï¿½NICA (Bacharelado);102/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+34;Henrique Faleiros de Padua Ferreira;***.100.838-**;MEDICINA (Bacharelado);103/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+35;ï¿½gor Silva Matias;***.262.716-**;MEDICINA (Bacharelado);106/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+36;Ivan Alcides Sarto Jï¿½nior;***.526.918-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);111/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+37;Ivanessa Vieira de Oliveira;***.224.478-**;AGRONOMIA (Bacharelado);100/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+38;Jï¿½ssica da Cruz Menezes;***.858.906-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);86/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+39;Jessica Rodrigues Costa;***.104.048-**;MEDICINA (Bacharelado);103/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+40;Julia Goes Alpendre Elias;***.642.118-**;ENGENHARIA ELï¿½TRICA (Bacharelado);99/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+41;Kathuly Kilmer Santos Corrï¿½a;***.208.116-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);111/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+42;Ketlen Caroline Souza Fonseca;***.957.836-**;PSICOLOGIA (Bacharelado);93/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+43;Leonardo Mendonï¿½a Borges;***.672.366-**;ENGENHARIA ELï¿½TRICA (Bacharelado);91/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+44;Lilian Nunes dos Santos;***.757.386-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);87/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+45;Luca Silva e Nirschl;***.742.828-**;PSICOLOGIA (Bacharelado);93/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+46;Lucas Carvalho Rosa de Souza;***.669.406-**;Fï¿½SICA (Licenciatura);84/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+47;Lynna Stefany Furtado Morais;***.353.576-**;ENFERMAGEM (Bacharelado);108/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+48;Maria Gabriela Pereira Miranda;***.846.658-**;FISIOTERAPIA (Bacharelado);96/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+49;Maria Vithorya de Magalhï¿½es Ferreira;***.201.666-**;FISIOTERAPIA (Bacharelado);110/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+50;Marianna Rodrigues Paiva Buarao;***.751.068-**;AGRONOMIA (Bacharelado);92/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+51;Milena Teixeira dos Santos;***.397.024-**;AGRONOMIA (Bacharelado);95/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+52;Nathalia Caroline do Nascimento;***.034.528-**;BIOMEDICINA (Bacharelado);90/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Maio";UFTM - PROEXT 
+53;Nï¿½colas Antonio Tavares;***.973.378-**;ENGENHARIA ELï¿½TRICA (Bacharelado);91/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+54;Nyna Vitï¿½ria Marques Fontes;***.090.436-**;PSICOLOGIA (Bacharelado);97/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+55;Paola Christye Simonato;***.168.397-**;MEDICINA (Bacharelado);88/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+56;Stefany Santos Neves;***.366.216-**;EDUCAï¿½ï¿½O Fï¿½SICA (Bacharelado);86/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+57;Thainara Leite Daher;***.968.136-**;HISTï¿½RIA (Licenciatura);85/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT 
+58;Vinï¿½cius Azevedo Vigarani;***.966.798-**;AGRONOMIA (Bacharelado);95/2023;"Edital PIBEX/PROEXT 09/2022";R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+59;Anna Laura Gomes Rizzatto;***.141.048-**;BIOMEDICINA (Bacharelado);156/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+60;Anna Luï¿½sa Saraiva Vaz de Oliveira;***.756.918-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);121/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+61;Camila Rodrigues Perlim;***.134.608-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);121/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+62;Frederico Garcia Martins Borges de Miranda;***.496.516-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);116/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+63;Joï¿½o Vitor Ferreira dos Santos;***.382.556-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);116/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+64;Lorenzo Araï¿½jo de Freitas;***.969.066-**;HISTï¿½RIA (Licenciatura);155/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Maio a Novembro";UFTM - PROEXT
+65;Maria Eduarda Cruvinel Boaretto;***.433.418-**;CIï¿½NCIAS BIOLï¿½GICAS (Licenciatura);155/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;2023 - marï¿½o;UFTM - PROEXT
+66;Yve Matayoshi Galvï¿½o;***.972.406-**;SERVIï¿½O SOCIAL (Bacharelado);156/2021;Processo Seletivo CCCP/PROEXT 01/2023;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+67;Alï¿½cia Soares Siqueira;***.458.956-**;PSICOLOGIA (Bacharelado);54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;2023 - marï¿½o;UFTM - PROEXT
+68;Eduarda de Lima Ferreira;***.841.988-** ;TERAPIA OCUPACIONAL (Bacharelado);61/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+69;Laura Helena Silva;***.258.658-**;PSICOLOGIA (Bacharelado);54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Marï¿½o a Novembro";UFTM - PROEXT
+70;Jorge Henrique Amaral Junior;***.450.298-**;Fisioterapia;54/2021;Processo Seletivo CCULT/PROEXT 42/2022;R$ 400,00;"2023 - Maio a Novembro";UFTM - PROEXT
+71;Julia Gabriela Picca;***.136.838-**;TERAPIA OCUPACIONAL (Bacharelado);114/2021;Processo Seletivo SEMEC/PROEXT 43/2022;R$ 400,00;"2023 - Marï¿½o a Maio";UFTM - PROEXT
+72;Athilla Izidio Lopes Pereira;***.072.508-**;"ENGENHARIA AMBIENTAL (Bacharelado) ";134/2022;Proceso Seletivo Nï¿½cleo Rondon 31/2023;R$ 400,00;"2023 - Abril a Dezembro";UFTM - PROEXT
+73;Ingrid de Oliveira Marques;"***.881.786-** ";"Tï¿½CNICO EM ANï¿½LISES CLï¿½NICAS ";158/2023;Edital PROEXT/CEFORES 06/2022;R$ 400,00;"2023 - Abril a Dezembro";CEFORES
+74;Josï¿½ Antonhy Vieira Ramos;"***.915.554-** ";"Tï¿½CNICO EM INFORMï¿½TICA ";159/2023;Edital PROEXT/CEFORES 06/2022;R$ 400,00;"2023 - Abril a Dezembro";CEFORES
+75;Leonardo Bruno Terruggi;***.075.368-**;CIï¿½NCIAS BIOLï¿½GICAS;62/2023;Processo Seletivo ECOCAPOEIRA/PROEXT/FUNEPU 41/2022;R$ 400,00;2023/2024 Marï¿½o/23 a Fevereiro/24;FUNEPU 
+76;Luciane Mayra Graciotto;***.944.428-**;ENFERMAGEM (Bacharelado);40/2023;Processo Seletivo E-fluxo 30/2023;R$ 500,00;"2023 - Abril a Outubro";FUNEPU 
+77;Milena Ramos Silva;***.587.186-**;ENFERMAGEM (Bacharelado);40/2023;Processo Seletivo E-fluxo 30/2023;R$ 500,00;"2023 - Abril a Outubro";FUNEPU 
