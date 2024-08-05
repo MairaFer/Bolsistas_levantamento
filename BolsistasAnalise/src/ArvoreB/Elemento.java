@@ -62,8 +62,8 @@ public class Elemento {
 
     public double getValorMensalDouble() {
         try {
-            // Remove o símbolo "R$", espaços e substitui a vírgula por ponto
-            String valorSemFormato = valorMensal.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".");
+            // Remove o símbolo de aspas (""), simbolo de real "R$" e espaços, também substitui a vírgula por ponto
+            String valorSemFormato = valorMensal.replace("\"","").replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".");
             return Double.parseDouble(valorSemFormato);
         } catch (NumberFormatException e) {
             System.err.println("Erro ao converter valor mensal: " + valorMensal);
